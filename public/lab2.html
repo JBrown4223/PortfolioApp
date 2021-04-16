@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html5>
+    <head>
+        <title>Lab 2: Images</title>
+
+        <style>
+            #a { 
+                float:left; 
+                width:400px; 
+                height:400px; 
+                background-color:white; 
+                border:solid black; 
+            } 
+            #b { 
+                float:left; 
+                width:400px; 
+                height:400px; 
+                background-color:white;  
+                border:solid black; 
+                margin-left:20px; 
+            } 
+            #c{ 
+                float:right; 
+                width:400px; 
+                height:400px; 
+                background-color:white; 
+                border:solid black; 
+            } 
+            .Nav{
+                background-color:blue;
+                border:solid blue; 
+            }
+            .Nav h2{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: white;
+            }
+            h3{
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font:bold;
+            }
+            img{
+                position: relative;          /* where the next element will be automatically positioned */
+                display: inline-block;       /* causes element width to shrink to fit content */
+                left: 50%;                   /* moves left side of image/element to center of parent element */
+                transform: translate(-50%);  /* centers image/element on "left: 50%" position */
+            }
+        </style>
+    </head>
+    <div class="Nav">
+        <h2>Lab 2: Images</h2>
+    </div>
+    <br/>
+    <div class="Container-1">
+        <div id="a">
+            <h3>Created Image</h3>
+            <img src='../images/logo.png' alt="Drawn Image - Logo" width="300" height="200">
+        </div>
+        <div id="b">
+            <h3>Sample Image</h3>
+            <img src='../images/Bill_Nye_Fire.jpg' alt="Image Other " width="300" height="200">
+        </div>
+        <div id="c">
+            <h3>Edited Sample Image</h3>
+            <img src='../images/Bye_Nye_FireGuy.jpg' alt="Edited Image" width="300" height="200">
+        </div>
+
+    </div>
+</html5>
